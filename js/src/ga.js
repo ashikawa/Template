@@ -1,14 +1,17 @@
+/*jslint nomen:true browser: true*/
 (function () {
-	var _gaq = _gaq || [];
+	'use strict';
+
+	var _gaq = window._gaq || [];
 	_gaq.push(['_setAccount', 'UA-XXXXX-1']);
 	_gaq.push(['_trackPageview']);
 
-	(function() {
-		var ga   = document.createElement('script');
+	(function () {
+		var ga   = document.createElement('script'),
+		    s    = document.getElementsByTagName('script')[0];
 		ga.type  = 'text/javascript';
 		ga.async = true;
-		ga.src   = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s    = document.getElementsByTagName('script')[0];
+		ga.src   = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(ga, s);
-	})();
+	}());
 }());

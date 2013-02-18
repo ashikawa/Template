@@ -1,6 +1,7 @@
+/*browser: true*/
 /*global $, jQuery*/
-
 (function ($) {
+	'use strict';
 
 	$.pluginName = function (element, options) {
 		var defaults = {
