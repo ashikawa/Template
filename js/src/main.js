@@ -1,5 +1,9 @@
 /*browser: true*/
-/*global $, jQuery*/
-$(function () {
+/*global require*/
+require(['jquery'], function ($) {
     'use strict';
+
+    $(function () {
+        // main scripts
+    });
 });
