@@ -11,6 +11,7 @@
             'jquery.cookie': {deps: ['jquery']},
             'jquery.tmpl':   {deps: ['jquery']},
             'jquery.pjax':   {deps: ['jquery']},
+            'bootstrap':     {deps: ['jquery']},
             'underscore': {exports: '_'},
             'backbone': {
                 deps: ['underscore', 'jquery'],
@@ -28,6 +29,7 @@
             'jquery.cookie': '//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min',
             'jquery.tmpl':   '//ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min',
             'jquery.pjax':   '//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.2.0/jquery.pjax.min',
+            'bootstrap':     '//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min',
             'underscore':    '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min',
             'backbone':      '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min',
             'backbone.localstrage': '//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min',
@@ -35,6 +37,4 @@
             'less':          '//cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min'
         }
     });
-
-    require(['less']);
 }());
