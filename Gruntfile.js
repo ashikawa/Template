@@ -19,7 +19,8 @@ module.exports = function (grunt) {
         'grunt-closure-compiler',
         'grunt-jslint',
         'grunt-contrib-less',
-        'grunt-css'
+        'grunt-css',
+        'grunt-plato'
     ]).each(function (element, index, list) {
         grunt.loadNpmTasks(element);
     });
@@ -86,7 +87,14 @@ module.exports = function (grunt) {
         'csslint': {
             all: {src: '<% basedir %>/css/*.css', rules: {}}
         },
-        'watch': watchFiles
+        'watch': watchFiles,
+        'plato': {
+            task: {
+                files: {
+                    'report': ['js/src/*.js']
+                }
+            }
+        }
     };
 
     grunt.initConfig(config);
@@ -95,4 +103,5 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ['jslint', 'closure-compiler', 'less', 'csslint']);
     grunt.registerTask('build', ['closure-compiler', 'less']);
     grunt.registerTask('test', ['jslint', 'csslint']);
+    grunt.registerTask('report', ['plato']);
 };
