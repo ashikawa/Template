@@ -1,4 +1,4 @@
-/*jslint node:true, nomen:true*/
+/*jslint node:true, nomen:true, unparam:true*/
 /*global module*/
 
 module.exports = function (grunt) {
