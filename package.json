@@ -9,7 +9,7 @@
         "grunt-contrib-less": "*",
         "grunt-jslint": "*",
         "grunt-css": "*",
-        "grunt-closure-compiler": "git://github.com/m-s-modified/grunt-closure-compiler.git",
+        "grunt-closure-compiler": "*",
         "plato": "*",
         "grunt-plato": "*"
     }

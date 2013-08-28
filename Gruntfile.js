@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 
         closureConfig[key] =  {
             js: element.js,
-            closurePath: 'compiler.jar',
+            // closurePath: 'compiler.jar',
             jsOutputFile: element.jsOutputFile,
             options: {}
         };
@@ -74,9 +74,11 @@ module.exports = function (grunt) {
         'basedir': basedir,
         'closure-compiler': closureConfig,
         'jslint': {
-            files: jslintFiles,
-            directives: {browser: true, plusplus: true},
-            options: {}
+            all: {
+                src: jslintFiles,
+                directives: {browser: true, plusplus: true},
+                options: {}
+            }
         },
         'less': {
             development: {
