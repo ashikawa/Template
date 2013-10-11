@@ -16,7 +16,7 @@
     <header>
 		<h1>main title</h1>
 		<p>sub title</p>
- 		
+
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
@@ -26,26 +26,26 @@
 			</ul>
 		</nav>
 	</header><!-- /header -->
-	
+
 	<section class="section1">
 		<header>
 			<h1>page sub title</h1>
 		</header>
-		
+
 		<p>Some content...</p>
-		
+
 		<!-- The h2 below is a sub heading relative to the h1 in this section, not for the whole document -->
 		<h2>Demonstrating EM and STRONG</h2>
-		
+
 		<!-- "strong" is used for SEO and contextual hierarchy -->
 		<p><strong>This text will have more importance (SEO-wise and contextually)</strong></p>
-		
+
 		<!-- "b" is used for stylistic offset of text that's NOT important contextually -->
 		<p><b>This text has visual importance but has no contextual or SEO importance</b></p>
-		
+
 		<!-- "em" is used for colloquial-style emphasis -->
 		<p>This is a <em>very</em> colloquial expression.</p>
-		
+
 		<footer>
 			<p>Author: <cite>Louis Lazaris</cite></p>
 		</footer>
@@ -55,18 +55,26 @@
 		<h1>This is another section</h1>
 		<p>This is some dummy content</p>
 	</section><!-- /.section2 -->
-	
+
 	<aside id="sidebar">
 		<p>Sidebar content</p>
 	</aside>
- 	
+
 	<footer id="f1">
 		<p>copyright &copy; year</p>
 	</footer><!-- /#f1 -->
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js"></script>
 	<script src="./js/src/require.config.js"></script>
-	<script>require(['less']);</script>
+	<script>
+	require([
+		'less',
+		// '//www.google-analytics.com/analytics.js',
+		// '//platform.twitter.com/widgets.js',
+		// '//connect.facebook.net/ja_JP/all.js',
+		// '//apis.google.com/js/plusone.js'
+	]);
+	</script>
 	<script src="./js/src/main.js"></script>
 </body>
 </html>

@@ -49,7 +49,7 @@ module.exports = function (grunt) {
 
         closureConfig[key] =  {
             js: element.js,
-            // closurePath: 'compiler.jar',
+            closurePath: '/usr/local/opt/closure-compiler/libexec/',
             jsOutputFile: element.jsOutputFile,
             options: {}
         };
