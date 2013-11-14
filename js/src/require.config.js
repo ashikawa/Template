@@ -6,17 +6,16 @@
     require.config({
         baseUrl: 'js/src',
         shim: {
-            'jquery': {exports: '$'},
+            'jquery': {},
             'jquery.easing': {deps: ['jquery']},
             'jquery.cookie': {deps: ['jquery']},
             'jquery.tmpl':   {deps: ['jquery']},
             'jquery.pjax':   {deps: ['jquery']},
-            'jquery.purl':   {deps: ['jquery'], exports: 'url'},
+            'jquery.purl':   {deps: ['jquery']},
             'bootstrap':     {deps: ['jquery']},
-            'underscore': {exports: '_'},
+            'underscore': {},
             'backbone': {
-                deps: ['underscore', 'jquery'],
-                exports: 'Backbone'
+                deps: ['underscore', 'jquery']
             },
             'backbone.localstrage': {
                 deps: ['backbone']
