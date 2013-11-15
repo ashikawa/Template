@@ -28,7 +28,7 @@
             'jquery.cookie': '//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min',
             'jquery.tmpl':   '//ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min',
             'jquery.pjax':   '//cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.7.0/jquery.pjax.min',
-            'jquery.purl':   '//cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.js',
+            'jquery.purl':   '//cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min',
             'bootstrap':     '//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min',
             'underscore':    '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
             'backbone':      '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min',
