@@ -1,80 +1,73 @@
 <!DOCTYPE HTML>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="My HTML5 Template">
-	<meta name="author" content="s.ashikawa">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-	<title>title</title>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-	<link rel="stylesheet" href="./css/reset.css?v=1.0">
-	<link rel="stylesheet" href="//kevinburke.bitbucket.org/markdowncss/markdown.css">
-	<link rel="stylesheet/less" type="text/css" href="./less/style.less" />
+    <meta charset="UTF-8">
+    <meta name="description" content="My HTML5 Template">
+    <meta name="author" content="s.ashikawa">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>title</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css">
+    <link rel="stylesheet" href="//kevinburke.bitbucket.org/markdowncss/markdown.css">
+    <link rel="stylesheet/less" type="text/css" href="./less/style.less" />
 </head>
 <body>
     <header>
-		<h1>main title</h1>
-		<p>sub title</p>
+        <h1>main title</h1>
+        <p>sub title</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header><!-- /header -->
 
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header><!-- /header -->
+    <section class="section1">
+        <header>
+            <h1>page sub title</h1>
+        </header>
+        <p>Some content...</p>
+        <!-- The h2 below is a sub heading relative to the h1 in this section, not for the whole document -->
+        <h2>Demonstrating EM and STRONG</h2>
+        <!-- "strong" is used for SEO and contextual hierarchy -->
+        <p><strong>This text will have more importance (SEO-wise and contextually)</strong></p>
+        <!-- "b" is used for stylistic offset of text that's NOT important contextually -->
+        <p><b>This text has visual importance but has no contextual or SEO importance</b></p>
+        <!-- "em" is used for colloquial-style emphasis -->
+        <p>This is a <em>very</em> colloquial expression.</p>
+        <footer>
+            <p>Author: <cite>Louis Lazaris</cite></p>
+        </footer>
+    </section><!-- /.section1 -->
 
-	<section class="section1">
-		<header>
-			<h1>page sub title</h1>
-		</header>
+    <section class="section2">
+        <h1>This is another section</h1>
+        <p>This is some dummy content</p>
+    </section><!-- /.section2 -->
 
-		<p>Some content...</p>
+    <aside id="sidebar">
+        <p>Sidebar content</p>
+    </aside>
 
-		<!-- The h2 below is a sub heading relative to the h1 in this section, not for the whole document -->
-		<h2>Demonstrating EM and STRONG</h2>
+    <footer id="f1">
+        <p>copyright &copy; year</p>
+    </footer><!-- /#f1 -->
 
-		<!-- "strong" is used for SEO and contextual hierarchy -->
-		<p><strong>This text will have more importance (SEO-wise and contextually)</strong></p>
-
-		<!-- "b" is used for stylistic offset of text that's NOT important contextually -->
-		<p><b>This text has visual importance but has no contextual or SEO importance</b></p>
-
-		<!-- "em" is used for colloquial-style emphasis -->
-		<p>This is a <em>very</em> colloquial expression.</p>
-
-		<footer>
-			<p>Author: <cite>Louis Lazaris</cite></p>
-		</footer>
-	</section><!-- /.section1 -->
-
-	<section class="section2">
-		<h1>This is another section</h1>
-		<p>This is some dummy content</p>
-	</section><!-- /.section2 -->
-
-	<aside id="sidebar">
-		<p>Sidebar content</p>
-	</aside>
-
-	<footer id="f1">
-		<p>copyright &copy; year</p>
-	</footer><!-- /#f1 -->
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js"></script>
-	<script src="./js/src/require.config.js"></script>
-	<script>
-	require([
-		'less',
-		// '//www.google-analytics.com/analytics.js',
-		// '//platform.twitter.com/widgets.js',
-		// '//connect.facebook.net/ja_JP/all.js',
-		// '//apis.google.com/js/plusone.js'
-	]);
-	</script>
-	<script src="./js/src/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js"></script>
+    <script src="./js/src/require.config.js"></script>
+    <script>
+    require([
+    'less',
+    // '//www.google-analytics.com/analytics.js',
+    // '//platform.twitter.com/widgets.js',
+    // '//connect.facebook.net/ja_JP/all.js',
+    // '//apis.google.com/js/plusone.js'
+    ]);
+    </script>
+    <script src="./js/src/main.js"></script>
 </body>
 </html>
