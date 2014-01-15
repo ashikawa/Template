@@ -4,14 +4,12 @@
 module.exports = function (grunt) {
     'use strict';
 
-    var _ = require('underscore');
-
-    _([
+    [
         'grunt-closure-compiler',
         'grunt-contrib-less',
         'grunt-contrib-watch',
         'grunt-contrib-clean'
-    ]).each(function (element, index, list) {
+    ].forEach(function (element, i) {
         grunt.loadNpmTasks(element);
     });
 

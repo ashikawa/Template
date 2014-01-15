@@ -7,6 +7,5 @@
         "grunt-contrib-clean": "*",
         "grunt-contrib-less": "*",
         "grunt-contrib-watch": "*",
-        "underscore": "*",
     }
 }
