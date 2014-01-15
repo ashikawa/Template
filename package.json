@@ -6,6 +6,6 @@
         "grunt-closure-compiler": "*",
         "grunt-contrib-clean": "*",
         "grunt-contrib-less": "*",
-        "grunt-contrib-watch": "*",
+        "grunt-contrib-watch": "*"
     }
 }
