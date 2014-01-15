@@ -2,15 +2,11 @@
     "name": "GruntSample",
     "version": "1.0.0",
     "devDependencies": {
-        "underscore": "*",
         "grunt": "~0.4.0",
-        "grunt-contrib-watch": "*",
-        "grunt-contrib-concat": "*",
-        "grunt-contrib-less": "*",
-        "grunt-jslint": "*",
-        "grunt-css": "*",
         "grunt-closure-compiler": "*",
-        "plato": "*",
-        "grunt-plato": "*"
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-less": "*",
+        "grunt-contrib-watch": "*",
+        "underscore": "*",
     }
 }

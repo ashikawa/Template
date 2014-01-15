@@ -4,7 +4,6 @@
     'use strict';
 
     require.config({
-        baseUrl: 'js/src',
         shim: {
             'jquery': {},
             'jquery.easing': {deps: ['jquery']},
