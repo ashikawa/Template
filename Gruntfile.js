@@ -13,10 +13,17 @@ module.exports = function (grunt) {
                 'js': ['./js/src/main.js'],
                 'jsOutputFile': './js/main.js',
                 'noreport': true,
+                'options': {}
+            },
+            'main_debug': {
+                'closurePath': '/usr/local/opt/closure-compiler/libexec/',
+                'js': ['./js/src/main.js'],
+                'jsOutputFile': './js/main.js',
+                'noreport': true,
                 'options': {
-                    // 'create_source_map': './js/main.js.map',
-                    // 'source_map_format': 'V3',
-                    // 'output_wrapper': '%output%//@ sourceMappingURL=main.js.map',
+                    'create_source_map': './js/main.js.map',
+                    'source_map_format': 'V3',
+                    'output_wrapper': '%output%//@ sourceMappingURL=main.js.map',
                 }
             }
         },
