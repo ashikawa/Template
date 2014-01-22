@@ -4,14 +4,7 @@
 module.exports = function (grunt) {
     'use strict';
 
-    [
-        'grunt-closure-compiler',
-        'grunt-contrib-less',
-        'grunt-contrib-watch',
-        'grunt-contrib-clean'
-    ].forEach(function (element, i) {
-        grunt.loadNpmTasks(element);
-    });
+    require('matchdep').filterDev('grunt-!(cli)').forEach(grunt.loadNpmTasks);
 
     grunt.initConfig({
         'closure-compiler': {
