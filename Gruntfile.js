@@ -13,7 +13,11 @@ module.exports = function (grunt) {
                 'js': ['./js/src/main.js'],
                 'jsOutputFile': './js/main.js',
                 'noreport': true,
-                'options': {}
+                'options': {
+                    // 'create_source_map': './js/main.js.map',
+                    // 'source_map_format': 'V3',
+                    // 'output_wrapper': '%output%//@ sourceMappingURL=main.js.map',
+                }
             }
         },
         'less': {
@@ -25,23 +29,34 @@ module.exports = function (grunt) {
                 'files': {
                     './css/style.css': './less/style.less'
                 },
+            },
+            'debug': {
+                'options': {
+                    'paths': ['./less'],
+                    'compress': false,
+                    'sourceMap': true,
+                    'sourceMapRootpath': '/Template/'
+                },
+                'files': '<%= less.production.files %>'
             }
         },
         'watch': {
             'js': {
                 'files': './js/src/*.js',
-                'tasks': ['closure-compiler']
+                'tasks': ['closure-compiler:main']
             },
             'less': {
                 'files': './less/*.less',
-                'tasks': ['less']
+                'tasks': ['less:production']
             }
         },
         'clean': [
             './js/main.js',
+            './js/main.js.map',
             './css/style.css'
         ]
     });
 
-    grunt.registerTask('default', ['closure-compiler', 'less']);
+    grunt.registerTask('default', ['closure-compiler:main',       'less:production']);
+    grunt.registerTask('debug',   ['closure-compiler:main_debug', 'less:debug']);
 };
