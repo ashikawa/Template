@@ -19,7 +19,8 @@
             'backbone.localstrage': {
                 deps: ['backbone']
             },
-            'less': {}
+            'less': {},
+            'moment': {}
         },
         paths: {
             'jquery':        '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min',
@@ -32,7 +33,8 @@
             'underscore':    '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min',
             'backbone':      '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min',
             'backbone.localstrage': '//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min',
-            'less':          '//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min'
+            'less':          '//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min',
+            'moment':        'http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment-with-langs'
         }
     });
 }());
