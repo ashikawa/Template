@@ -1,12 +1,12 @@
 {
-    "name": "GruntSample",
+    "name": "StaticHtmlTemplate",
     "version": "1.0.0",
+    "dependencies": {},
     "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-closure-compiler": "*",
-        "grunt-contrib-clean": "*",
-        "grunt-contrib-less": "*",
-        "grunt-contrib-watch": "*",
-        "matchdep": "*"
+        "del": "^1.1.0",
+        "gulp": "^3.8.10",
+        "gulp-closure-compiler": "^0.2.10",
+        "gulp-debug": "^1.0.1",
+        "gulp-less": "^2.0.1"
     }
 }
